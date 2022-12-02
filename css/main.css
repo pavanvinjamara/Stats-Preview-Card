@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(233deg, 47%, 7%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 86px 24px;
+  font-family: "Inter", "Lexend Deca";
+}
+
+.Content {
+  padding: 44px 28px;
+  text-align: center;
+  background-color: hsl(244deg, 38%, 16%);
+  border-radius: 0px 0px 10px 10px;
+}
+.Content h2 {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 17px;
+}
+.Content h2 span {
+  color: hsl(277deg, 64%, 61%);
+}
+.Content p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+.Content h3 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 22px;
+  margin-top: 30px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.colorchange {
+  text-transform: uppercase;
+  color: hsla(0deg, 0%, 100%, 0.6);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.moblie_image {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 10px 10px 0px 0px;
+  -webkit-filter: invert(0%) sepia(50%) saturate(4350%) hue-rotate(240deg) brightness(60%) contrast(93%);
+          filter: invert(0%) sepia(50%) saturate(4350%) hue-rotate(240deg) brightness(60%) contrast(93%);
+}
+
+.desktop_image {
+  display: none;
+}
+
+.attribution {
+  margin-top: 10px;
+  font-size: 15px;
+  color: hsla(0deg, 0%, 100%, 0.6);
+  text-align: center;
+}
+.attribution a {
+  color: hsl(277deg, 64%, 61%);
+}
+
+@media screen and (min-width: 604px) {
+  main {
+    width: 604px;
+    padding: 86px 24px;
+  }
+}
+@media screen and (min-width: 1147px) {
+  body {
+    margin: 0;
+  }
+  .Content,
+h3,
+p,
+span {
+    padding: 0px;
+    margin: 0px;
+  }
+  main {
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    align-self: center;
+    grid-template-columns: 577px 544px;
+  }
+  main .img_section {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  main .Content {
+    grid-column: 1;
+    padding: 73px 67px;
+    text-align: left;
+  }
+  main .Content h2 {
+    font-size: 35px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+  }
+  main .Content p {
+    margin-right: 65px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 50px;
+  }
+  .info h3 {
+    font-size: 25px;
+  }
+  .colorchange {
+    padding: 0;
+  }
+  .moblie_image {
+    display: none;
+  }
+  .desktop_image {
+    display: block;
+    height: 450px;
+    border-radius: 0px 10px 10px 0px;
+    -webkit-filter: invert(0%) sepia(50%) saturate(4350%) hue-rotate(240deg) brightness(60%) contrast(93%);
+            filter: invert(0%) sepia(50%) saturate(4350%) hue-rotate(240deg) brightness(60%) contrast(93%);
+  }
+}
